@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/viribusapp/viribus/issues"
   },
-  "homepage": "https://github.com/viribusapp/viribus#readme"
+  "homepage": "https://github.com/viribusapp/viribus#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "uuid": "^8.3.2"
+  }
 }
