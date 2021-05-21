@@ -19,6 +19,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
+    animation: load 3s forwards;
+    opacity: 0;
 }
 body[div]{
     display: block;
@@ -37,11 +39,13 @@ body[div]{
     position: relative;
     display: block;
     line-height: 0;
+    animation: wavesAnimationSecondary 4s infinite;
 }
 .wave-content {
     stroke: none;
     fill: #39D8FF;
     position: relative;
+    animation: wavesAnimation 4s infinite;
 }
 @media screen and (max-width:424px){
     .head {
@@ -51,6 +55,8 @@ body[div]{
 .subs {
     font-size: 40px;
     text-align: center;
+    animation: subsIn 5s forwards;
+    opacity: 0;
 }
 .cont-un {
     background-image: url("https://d2z0k43lzfi12d.cloudfront.net/blog/vcdn326/wp-content/uploads/2017/01/the-5-dumbest-tips-for-running-a-half-marathon-1200x800-1024x683.jpg");
@@ -134,4 +140,49 @@ a,a::after,a:active {
     height: 100%;
     background-size: cover;
     width: 100%;
+}
+.element:first-child {
+    opacity: 0;
+    animation: animate 2s forwards;
+}
+@keyframes load {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+@keyframes animate {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+.element:nth-child(2){
+    opacity: 0;
+    animation: animate 2s .5s forwards;
+}
+.element:last-child {
+    opacity: 0;
+    animation: animate 2s 1s forwards;
+}
+.waves {
+    height: 200px; 
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    transform: rotate(180deg);
+    animation: wavesAnimation 4s infinite;
+    fill:#00CDFF;
+}
+@keyframes wavesAnimation {
+    0% {fill: #00CDFF;}
+    50% {fill: #DF4DFF;}
+    100% {fill: #00CDFF;}
+}
+@keyframes wavesAnimationSecondary {
+    0% {background-color: #00CDFF;}
+    50% {background-color: #DF4DFF;}
+    100% {background-color: #00CDFF;}
+}
+@keyframes subsIn {
+    from {opacity: 0;}
+    to {opacity: 100;}
 }
