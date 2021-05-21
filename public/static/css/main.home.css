@@ -129,9 +129,9 @@ a,a::after,a:active {
 }
 .weight-container {
     background-image: url('https://trebelwellness.com/assets/components/phpthumbof/cache/The-barbell-principle-Nassim-Taleb.86597d737c3654a2d1cbf08f5abcde42.jpg');
-    margin-top: 10px;
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
     background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
 }
