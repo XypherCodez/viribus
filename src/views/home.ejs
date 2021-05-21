@@ -1,12 +1,25 @@
 <html lang="en">
     <head>
+        <!-- All Meta Tags -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--clem the css is doing that thing again where it fucking ignores my @media-->
+        <meta property="og:title" content="Viribus"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://viribus.xyz"/>
+        <meta property="og:image" content="" />
+        <meta property="og:description" content="Your fitness and diet tracking app." />
+        <meta name="theme-color" content="#0020C2" />
+
+        <!-- Webpage Title -->
+        <title>Viribus | Exercise and Diet Tracking App.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viribus | Exercise and diet tracking app.</title>
+        <!-- All external page links -->
         <link rel="stylesheet" href="/static/css/main.home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <!-- Page Header -->
         <div class="container">
             <div class="head">
                 <h1>Viribus</h1>
@@ -20,11 +33,35 @@
               <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" class="wave-content"></path>
             </svg>
         </div>
-        <div class="cont-un">
-            <div class="content">
-                <h1>hello</h1>
+        
+        <!-- Content Information -->
+        <div class="cont-un"></div>
+        <div class="content">
+            <div class="element">
+                <div class="elementContent">
+                    <h1><ion-icon name="lock-closed-outline" style="font-size: 60px;"></ion-icon></h1>
+                    <h2>Secure</h2>
+                    <p>Viribus offers secure TLS encryption and hashing for your account. You never have to worry about your account being breached.</p>
+                </div>
+            </div>
+            <div class="element">
+                <div class="elementContent">
+                    <h1><ion-icon name="code-slash-outline" style="font-size: 60px;"></ion-icon></h1>
+                    <h2>Open Source</h2>
+                    <p>Everything that you see right now is powered by open source. All of our code is available <a href="https://github.com/viribusapp/viribus">here</a>. But don't worry! This doesn't affect your security.</p>
+                </div>
+            </div>
+            <div class="element">
+                <div class="elementContent">
+                    <h1><ion-icon name="flash-outline" style="font-size: 60px;"></ion-icon></h1>
+                    <h2>Fast</h2>
+                    <p>Viribus is hosted on some of the fastest cloud services there are. All actions have a 5 second save guarantee. You can save your new weight fast.</p>
+                </div>
             </div>
         </div>
+
+    <!-- Scripts --> 
     <script src="/static/js/main.home.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 </html>
