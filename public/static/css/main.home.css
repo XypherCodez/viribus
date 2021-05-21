@@ -58,4 +58,25 @@ body[div]{
     margin-top: -150px;
     z-index: -5;
     height: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+}
+.content {
+    padding-top: 300px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    display: block;
+    position: relative;
+}
+@media screen and (max-width:602px) {
+    .subs {
+        line-height: normal;
+    }
+}
+@media screen and (max-width: 550px) {
+    .head {
+        font-size:300%;
+    }
 }

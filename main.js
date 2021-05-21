@@ -27,7 +27,7 @@ var port = process.env.PORT || 80 //Assign the PORT to either the `process` port
 app.set('port', port);
 app.set('view engine', 'ejs');
 app.use(hpp());
-app.use(helmet());
+app.use(helmet({contentSecurityPolicy: false}));
 // Although Viribus is open source, we don't want others using the software on other websites.
 // For each route you think should be accessible from other websites, manually configure it.
 app.use(cors({
