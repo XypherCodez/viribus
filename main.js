@@ -19,7 +19,7 @@
 */
 
 // Import modules.
-const express = require('express'), hpp = require('hpp'), helmet = require('helmet'), app = express(), cors = require('cors')
+const express = require('express'), hpp = require('hpp'), helmet = require('helmet'), app = express(), cors = require('cors'), session = require('express-session') /* i know its not the best but if you have better options feel free to put them in*/, uuid = require('uuid')
 
 var port = process.env.PORT || 80 //Assign the PORT to either the `process` port (For production environments), or locally port 80.
 
@@ -34,6 +34,18 @@ app.use(cors({
     origin: "http://localhost" | "https://viribus.xyz",
     optionsSuccessStatus: 200
 }));
+// DO NOT CHANGE THE SETTINGS FOR THE SESSION BELOW.
+app.use(session({
+    cookie:{
+        httpOnly: true,
+        secure: false,
+        sameSite: true
+    },
+    saveUninitialized: false,
+    resave: false,
+    proxy: true,
+    secret: uuid.v4()
+}))
 // Set the views directory to /src/views, and set the static folder.
 // In express, when we create a static function assigned to a folder, we no longer have to declare the folder name, instead declare the file/folder inside it.
 // Example:
@@ -62,3 +74,6 @@ app.get('/', cors(), async (req, res) => {
         res: res
     })
 })
+
+
+app.listen(port, () => {console.log(`[EXPRESS]: Listening on port ${port}`)})

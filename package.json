@@ -1,0 +1,20 @@
+{
+  "name": "viribus",
+  "version": "1.0.0",
+  "description": "Viribus is the fitness and diet tracking app to go. With future plans to go mobile, Viribus is one of the most powerful and configurable fitness apps out there.\r With Viribus, not only do you get your diet tracked, you can do it 100% **FREE**",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viribusapp/viribus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viribusapp/viribus/issues"
+  },
+  "homepage": "https://github.com/viribusapp/viribus#readme"
+}
