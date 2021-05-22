@@ -69,7 +69,7 @@ body[div]{
     filter: blur(8px);
 }
 .content {
-    padding-top: 200px;
+    padding-top: 300px;
     justify-content: center;
     display: flex;
     flex-wrap: nowrap;
@@ -185,4 +185,37 @@ a,a::after,a:active {
 @keyframes subsIn {
     from {opacity: 0;}
     to {opacity: 100;}
+}
+.scrollout {
+    height: 90%;
+    background-color: #fff;
+}
+.greenRight {
+    float: right;
+    justify-content: right;
+    width: 0px;
+    background-color: green;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.greenRightAnimation {
+    animation: greenRight .5s forwards;
+    animation-timing-function: cubic-bezier(5,5,.25,1);;
+    float: right;
+    justify-content: right;
+    width: 0px;
+    background-color: green;
+    margin-top: 50px;
+}
+@keyframes greenRight {
+    from {
+        width: 0px
+    }
+    to {
+        width: 700px;
+    }
+}
+.greenRight > h1 {
+    font-size: 50px;
 }

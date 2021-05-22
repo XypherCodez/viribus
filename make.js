@@ -107,7 +107,7 @@ if(!a){
         }
     }
     try {
-        fs.writeFileSync('./src/config/base.json', settings)
+        fs.writeFileSync('./src/config/base.json', JSON.stringify(settings))
         str += `${(new Date()).toUTCString()}: [OK] Imported settings.\n`
         str += `${(new Date()).toUTCString()}: [INFORMATION] Build finished. It took ${ms - (new Date()).getUTCMilliseconds()}.\n`;
         str += `${(new Date()).toUTCString()}: [INFORMATION] Process built at ${__dirname}.\n`
@@ -115,6 +115,8 @@ if(!a){
     } catch (e){
         console.log(`We couldn't update your base.json file. Thats fine, we will run off of the old information that was provided.`)
     }
+    require('./main')
+    return;
 }
 function build(){
     str += `${(new Date()).toUTCString()}: [OK] Starting build process.\n`
@@ -235,5 +237,5 @@ function addSTR(){
         console.log(settings)
         process.exit(0)
     }
+    require('./main')
 }
-require('./main')
