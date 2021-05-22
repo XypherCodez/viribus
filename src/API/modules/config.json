@@ -1,0 +1,19 @@
+{
+    "enabled": true,
+    "version": "V1",
+    "size": "5",
+    "supported": [
+        "c",
+        "cpp",
+        "java",
+        "nodejs",
+        "python"
+    ],
+    "endpoints": {
+        "get": [
+            "accountINFO",
+            "globalOPTIONS",
+            "news"
+        ]
+    }
+}

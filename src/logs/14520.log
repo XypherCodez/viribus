@@ -1,0 +1,19 @@
+------ Viribus Build Process ------Sat, 22 May 2021 01:13:26 GMT: [OK] Starting build process.
+Sat, 22 May 2021 01:13:26 GMT: [BAD] No base.json file found.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Starting build process.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Node.JS running on v12.18.2
+Sat, 22 May 2021 01:13:26 GMT: [OK] The server will run on port 80
+Sat, 22 May 2021 01:13:26 GMT: [OK] Java API Found.
+Sat, 22 May 2021 01:13:26 GMT: [OK] C API Found.
+Sat, 22 May 2021 01:13:26 GMT: [OK] C++ API Found.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Node.JS API Found.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Python API Found.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Loaded API configuration (Global)
+Sat, 22 May 2021 01:13:26 GMT: [OK] API turned on.
+Sat, 22 May 2021 01:13:26 GMT: [...] Importing settings.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Imported settings.
+Sat, 22 May 2021 01:13:26 GMT: [...] Starting express server.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Imported 'main.js'.
+Sat, 22 May 2021 01:13:26 GMT: [OK] Built process.
+Sat, 22 May 2021 01:13:26 GMT: [INFORMATION] Process building took 4ms.
+Sat, 22 May 2021 01:13:26 GMT: [INFORMATION] Finished build at C:\Users\Nate\Documents\viribus.
