@@ -114,6 +114,7 @@ if(!a){
         fs.writeFileSync(`./src/logs/${pid}.log`, str)
     } catch (e){
         console.log(`We couldn't update your base.json file. Thats fine, we will run off of the old information that was provided.`)
+        require('./main')
     }
     require('./main')
     return;
