@@ -1,4 +1,4 @@
-python websocket.py
+start python websocket.py
 node main.js
 
 

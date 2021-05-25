@@ -1,0 +1,14 @@
+<!--USED TO TEST WEBSOCKET CONNECTION SERVICES FROM THE CLIENT.-->
+
+<script>
+    let ws = new WebSocket('ws://localhost:88')
+    ws.onmessage = function (d) {
+        console.log(d)
+    }
+    ws.onopen = function (d) {
+        ws.send({
+            "type": "get",
+            "text": "hello"
+        })
+    }
+</script>

@@ -1,17 +1,18 @@
 def start(): 
     print("[PYTHON]: Starting WebSocket connection..")
-    import tornado.ioloop
-    import tornado.web
-    class MainHandler(tornado.web.RequestHandler):
-        def get(self):
-            self.write("Hello, world!");
-    
-    def make_app():
-        return tornado.web.Application([
-            (r"/", MainHandler),
-        ])
-    
-    app = make_app()
-    app.listen(8888)
-    tornado.ioloop.IOLoop.current().start();
-    print("[WEBSOCKET]: Started websocket server.")
+    import asyncio
+    import websockets
+
+    async def hello(websocket, path):
+        name = await websocket.recv()
+        print(f"< {name}")
+
+        greeting = f"Hello {name}!"
+
+        await websocket.send(greeting)
+        print(f"> {greeting}")
+
+    start_server = websockets.serve(hello, "localhost", 88)
+    print("[WEBSOCKET]: Started server.")
+    asyncio.get_event_loop().run_until_complete(start_server)
+    asyncio.get_event_loop().run_forever()
