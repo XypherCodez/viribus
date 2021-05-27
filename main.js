@@ -89,4 +89,25 @@ app.get('/signup', cors(), async (req, res) => {
     })
 })
 
+app.get('/account', cors(), async (req, res) => {
+    res.render('account', {
+        req: req,
+        res: res
+    })
+})
+
+app.get('/terms', cors(), async (req, res) => {
+    res.render('terms', {
+        req: req,
+        res: res
+    })
+})
+
+app.get('/privacy', cors(), async (req, res) => {
+    res.render('privacy', {
+        req: req,
+        res: res
+    })
+})
+
 app.listen(port, () => {console.log(`[EXPRESS]: Listening on port ${port}`)})
