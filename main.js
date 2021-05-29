@@ -110,4 +110,11 @@ app.get('/privacy', cors(), async (req, res) => {
     })
 })
 
+app.get('/premium', cors(), async (req, res) => {
+    res.render('premium', {
+        req: req,
+        res: res
+    })
+})
+
 app.listen(port, () => {console.log(`[EXPRESS]: Listening on port ${port}`)})
