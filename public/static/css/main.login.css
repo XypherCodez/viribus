@@ -1,0 +1,39 @@
+.form {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white; 
+    font-family: 'Century Gothic', sans-serif;  
+}
+
+.form h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.form h5 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.form li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.form li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-out 250ms;
+}
+
+.form li a:hover {
+    color: #b9b9b9;
+    /*font-size: 65px;*/
+}

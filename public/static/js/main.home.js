@@ -16,7 +16,7 @@
   window.onscroll = function (d) {
     if(!document.getElementById('greenRight').classList.contains('greenRightAnimation'))return;
     else {
-      document.getElementById('img-phone-cust').width += 90
+      document.getElementById('img-phone-cust').width + 5
     }
   }
 }(this)
