@@ -11,7 +11,7 @@
     "url": "git+https://github.com/viribusapp/viribus"
   },
   "keywords": [],
-  "author": "",
+  "author": "Clem",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/viribusapp/viribus/issues"
@@ -25,6 +25,7 @@
     "fs": "0.0.1-security",
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
+    "react": "^17.0.2",
     "uuid": "^8.3.2",
     "viribus.js": "^1.1.0"
   }
