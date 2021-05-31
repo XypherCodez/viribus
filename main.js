@@ -19,7 +19,14 @@
 */
 
 // Import modules.
-const express = require('express'), hpp = require('hpp'), helmet = require('helmet'), app = express(), cors = require('cors'), session = require('express-session') /* i know its not the best but if you have better options feel free to put them in*/, uuid = require('uuid')
+const express = require('express');
+const hpp = require('hpp');
+const helmet = require('helmet');
+const app = express();
+const cors = require('cors');
+const session = require('express-session');
+const uuid = require('uuid');
+/* Yes these modules could be a lot better, so if you'd rather others, feel free to add them! */
 
 var port = process.env.PORT || 80 //Assign the PORT to either the `process` port (For production environments), or locally port 80.
 
@@ -112,6 +119,13 @@ app.get('/privacy', cors(), async (req, res) => {
 
 app.get('/premium', cors(), async (req, res) => {
     res.render('premium', {
+        req: req,
+        res: res
+    })
+})
+
+app.get('/purchase', cors(), async (req, res) => {
+    res.render('purchase', {
         req: req,
         res: res
     })
