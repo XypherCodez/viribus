@@ -71,3 +71,14 @@ ul {
     color: #b9b9b9;
     /*font-size: 65px;*/
 }
+
+.prempurchase {
+    background-color: #00F2FF;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px;
+    text-align: center;
+}
