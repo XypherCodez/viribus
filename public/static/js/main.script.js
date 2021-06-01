@@ -43,6 +43,27 @@
         f=win.document.getElementById('lname');
         g=win.document.getElementById('age');
         i=win.document.getElementById('pwd');
+        const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i;
+        k=re.test(c.value);
+        console.log(k)
+        if(!k){
+            document.getElementById('email-invalid').style.display = "block";
+            setTimeout(() => {
+                document.getElementById('email-invalid').style.display = "none"
+            }, 2000);
+        } else {
+            a['email']=k;
+            if(!d.value){
+                document.getElementById('username-invalid').style.display = "block";
+                setTimeout(() => {
+                    document.getElementById('username-invalid').style.display = "none"
+                }, 2000);
+            } else {
+                var l,m,n,o,p,q,r,s;
+                l=get(`http://${win.location.hostname}/api/validate/username?val=${encodeURIComponent(d.value)}`);
+                //ill do more later.
+            }
+        }
     })
 }(this)
 

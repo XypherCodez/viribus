@@ -2,3 +2,4 @@
 node_modules
 ./src/logs/*
 ./src/config/base.json
+./src/config/db.json

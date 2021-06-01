@@ -38,9 +38,10 @@
 
             <label for="email"><strong>Email</strong></label><br>
             <input type="email" id="email" name="email" placeholder="Enter an email..." autocomplete="email">
-            <p style="font-size: 10px;">Email is invalid!</p><br>
+            <p style="font-size: 10px;display: none;" id="email-invalid">Email is invalid!</p><br>
             <label for="uname"><strong>Username</strong></label><br>
-            <input type="text" id="uname" name="uname" placeholder="Enter a username..." autocomplete="username"><br><br>
+            <input type="text" id="uname" name="uname" placeholder="Enter a username..." autocomplete="username">
+            <p style="font-size: 10px;display: none;" id="username-invalid">Username is taken!</p><br>
             <label for="fname"><strong>First Name</strong></label><br>
             <input type="text" id="fname" name="fname" placeholder="First Name..." autocomplete="name"><br><br>
             <label for="lname"><strong>Last Name</strong></label><br>
