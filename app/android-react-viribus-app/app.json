@@ -1,0 +1,12 @@
+{
+  "name": "andoird-react-viribus-app",
+  "displayName": "andoird-react-viribus-app",
+  "expo": {
+    "name": "andoird-react-viribus-app",
+    "slug": "andoird-react-viribus-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
