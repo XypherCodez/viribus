@@ -8,10 +8,10 @@ body {
 .header {
     overflow: hidden;
     background-color: rgb(14, 14, 14);
-    position: fixed;
     top: 0;
     width: 100%;
     padding:10px;
+    position: fixed;
 }
 .header > * {
     font-weight: 100;
@@ -33,7 +33,7 @@ body {
     margin-top: 23px;
     justify-content: space-between;
 }
-.header-top-elements > * > * {
+h3 {
     margin-left: 20px;
     float: left;
     text-decoration: none;
@@ -51,3 +51,4 @@ a {
     float: left;
     text-align: left;
 }
+/* k im out
