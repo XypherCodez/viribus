@@ -1,5 +1,6 @@
 start python websocket.py
-node main.js
-
-
+start node index.js
+cd src/react
+start npm start
 cmd /k
+
